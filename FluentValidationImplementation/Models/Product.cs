@@ -4,7 +4,7 @@ namespace FluentValidationImplementation.Models
 {
     public class Product
     {
-        public int ProductionId { get; set; }
+        public int ProductId { get; set; }
 
         // Stock Keeping Unit following a specific pattern (e.g., 8 uppercase letters/digits)
         public string SKU { get; set; }
@@ -14,7 +14,7 @@ namespace FluentValidationImplementation.Models
         [Column(TypeName = "decimal(8, 2)")]
         public decimal Price { get; set; }
 
-        public int stock { get; set; }
+        public int Stock { get; set; }
 
         public int CategoryId { get; set; }
 
